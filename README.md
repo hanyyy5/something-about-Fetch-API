@@ -44,7 +44,8 @@
 
 + 发送数据
 <br/>
-&nbsp;&nbsp;&nbsp;&nbsp;使用fetch发送数据，可以通过new Request() API 创建。 
+&nbsp;&nbsp;&nbsp;&nbsp;使用fetch发送数据，可以通过new Request() API 创建。
+<br/> 
 
 ```
    const request = new Request('./file.json', {
