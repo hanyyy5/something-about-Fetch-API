@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fetch使用</title>
+</head>
+<body>
+
+    <div class="get-res" style="width:200px;height:200px;">
+        返回的文本：
+        <h2></h2>
+    </div>
+   
+<script>
+   fetch('./data/file.json')
+    .then(response => {
+        console.log(response);
+        console.log(response.headers);
+        console.log(response.headers.get('Content-Type'));
+        console.log(response.headers.get('Date'));
+        console.log(response.status);
+        console.log(response.statusText);
+        console.log(response.url);
+        return response.json()
+    })
+    // .catch(err => console.error(err))
+    .then(data => {
+        console.log(data);
+        document.getElementsByTagName("h2")[0].innerHTML = data.data;
+    })
+
+</script>
+</body>
+</html>
