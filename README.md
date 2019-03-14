@@ -43,6 +43,7 @@
 <br/>
 
 + 发送数据
+<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;使用fetch发送数据，可以通过new Request() API 创建。 
 
 ```
@@ -67,13 +68,13 @@
   })
 ```
 
-<br/><br/>
+<br/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;由于fetch使用reponse和request对象，相较于传统的XMLHttpRequest, 它能够明确的配置请求对象以及获取响应对象头的数据。
 <br/><br/>
 
 ## 3.缺陷
- Fetch 现在还没有方法中止一个请求。而且用 Fetch 不能监测上传进度（XMLHttpRequest对象，传送数据的时候，有一个progress事件，用来返回进度信息）。目前可以使用AbortController 和 AbortSignal，这个通用的API 来通知中止事件。
+&nbsp;&nbsp;&nbsp;&nbsp;Fetch 现在还没有方法中止一个请求。而且用 Fetch 不能监测上传进度（XMLHttpRequest对象，传送数据的时候，有一个progress事件，用来返回进度信息）。目前可以使用AbortController 和 AbortSignal，这个通用的API 来通知中止事件。
 
 
 
